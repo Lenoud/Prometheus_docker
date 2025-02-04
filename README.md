@@ -467,7 +467,6 @@ EOF
 
 cat > /opt/prometheus/prometheus/prometheus.yml << EOF
 
-# my global config
 
 global:
 
@@ -475,11 +474,9 @@ global:
 
   evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
 
-  # scrape_timeout is set to the global default (10s).
 
  
 
-# Alertmanager configuration
 
 alerting:
 
@@ -493,33 +490,19 @@ alerting:
 
  
 
-# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
 
 rule_files:
 
   - "alert.yml"
 
-  # - "second_rules.yml"
 
  
 
-# A scrape configuration containing exactly one endpoint to scrape:
-
-# Here it's Prometheus itself.
 
 scrape_configs:
 
-  # The job name is added as a label  to any timeseries scraped from this config.
 
   - job_name: "prometheus"
-
- 
-
-    # metrics_path defaults to '/metrics'
-
-    # scheme defaults to 'http'.
-
- 
 
     static_configs:
 
