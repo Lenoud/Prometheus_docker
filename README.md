@@ -1460,15 +1460,15 @@ global:
 
 #163服务器
 
-  smtp_from: 'a351719672@163.com'
+  smtp_from: 'xxx@163.com'
 
 #发邮件的邮箱
 
-  smtp_auth_username: 'a351719672@163.com'
+  smtp_auth_username: 'xxxx@163.com'
 
 #发邮件的邮箱用户名
 
-  smtp_auth_password: 'IDMPGUMPWAAJPGKC'
+  smtp_auth_password: 'xxxxx'
 
 #发邮件的邮箱密码
 
@@ -1498,7 +1498,7 @@ receivers:
 
     email_configs:
 
-    - to: '351719672@qq.com'
+    - to: 'xxx@qq.com'
 
 #收邮件的邮箱
 
